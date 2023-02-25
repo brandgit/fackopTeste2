@@ -79,7 +79,7 @@ const changeContact = () =>{
    <div class="flex justify-center items-center flex-col w-full text-[white] bg-black">
         <div class="w-[90%]">
             <div class="w-full py-10">
-                <img class=" w-[90px] sm:w-[120px]" src="logos/LogoFackop6.0.png" alt="logo-fackop">
+                <img class=" w-[90px] sm:w-[120px]" src="/logos/LogoFackop6.0.png" alt="logo-fackop">
                 <h2 class="flex text-[1.5rem] font-bold justify-center text-[#5D3891] mt-5">GROUPE NUMERIQUE</h2>
             </div>
             <div class="flex flex-col gap-7 sm:flex-row justify-between w-full py-5 mb-5 ">
