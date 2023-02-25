@@ -18,12 +18,33 @@
         </div>
       
         <div class="containerVideoTop">
-          <video  muted
-            autoplay="true"
+          <!-- <iframe
+          width="100%"
+          height="100%"
+      src="/videos/introHomePageVideo.mp4"
+      frameborder="0"
+      allow="autoplay"
+      controls="0"
+      allowfullscreen
+    ></iframe> -->
+          <video 
+          tabindex="-1"
+          preload
+           muted
+            autoplay
             loop="true" class="videoTop" src="/videos/introHomePageVideo.mp4" />
         </div>
       </div>
     </div>
+          <iframe
+          width="100%"
+          height="100%"
+      src="/videos/introHomePageVideo.mp4"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      controls="0"
+      allowfullscreen
+    ></iframe>
 </template>
 
 <script setup>
@@ -49,6 +70,9 @@ import TitleH2 from '../global/TitleH2.vue';
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 15px;
 }
 
