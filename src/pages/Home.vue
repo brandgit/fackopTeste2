@@ -5,71 +5,86 @@
 
     <!-- Global presentation -->
     <IntroOfThePage/>
-     <div class="w-full h-[100vh] bg-[#141414]"></div>
-     <div class="w-full h-[100vh] bg-white"></div>
-     <div class="w-full h-[100vh] bg-red-500"></div>
-     <!-- Footer -->
-     <Footer/>
-  </div>
-      <!-- <Footer/> -->
-  
- 
-  <!-- <div class="flex flex-col items-center w-full">
-     TOP HOME PAGE
-    <TopHome/>
 
-     INTRO OF THE PAGE 
-    <IntroOfThePage/>
-
-     SERVICS CONTENT 
-    <div class="flex flex-col justify-center items-center w-full">
-      <div class="flex flex-col items-center text-center w-[90%]">
-        <TitleH1 title="Un environnement où chacun peut trouver sa place" />
-        <div class="w-[80%] sm:text-[20px] mt-5">
+    <!-- SERVICS CONTENT  -->
+    <div class="flex flex-col text-center items-center w-full py-20 bg-white ">
+      <div class="w-[90%] lg:w-[60%] ">
+        <TitleH1 title="UN ENVIRONEMENT OU CHANCUN PEUT TROUVER SA PLACE"/>
+      </div>
+      <div class="w-[80%] lg:w-[60%]   sm:text-[20px] mt-10">
           <p>
-            Des solutions numériques pour le bien-être de tous, des outils qui
+            Des solutions numériques pour le bien-être de tous, avec des outils qui
             vous permettent de vous sentir plus connecté aux personnes et aux
             choses qui vous importent.
           </p>
-        </div>
-        <NuxtLink class="text-[#5D3891] w-[80%] sm:text-[18px] mt-3" to="/services">
-          {{ forme }}En savoir plus sur nos Services
-        </NuxtLink>
       </div>
+      <router-link  class="text-[#5D3891] font-bold w-[80%] mt-3" to="/services">
+          {{ forme }}En savoir plus sur nos Services
+      </router-link >
+      <Carrousel/>
     </div>
-    <Carrousel/>
 
-     ABOUT CONTENT 
-    <div class="flex flex-col items-center text-center mt-[100px] w-[90%]">
-        <TitleH1 title="Une entreprise qui s'engage dans une mission" />
-        <div class="w-[80%] sm:text-[20px] mt-5">
-          <p>
-            Des créateurs et partenaires pationnés du numérique qui mettent la
-            technologie au service du monde réel
-          </p>
-        </div>
-        <div class="container">
-          <Fondator  image="/imageTests/profile3.jpg" name="JORDAN NTOUNTOUM" proffession="Directeur Artistique"/>
-          <Fondator image="/imageTests/profile4.jpg" name="TIKOUE TIKOUE BRAND" proffession="Data Scientist/Formateur Web"/>
-          <Fondator image="/imageTests/profile5.jpg" name="MOUSSAVOU LIONEL" proffession="Dev Full stack/Ingénieur Devops"/>
-        </div>
-    </div>
-     TEAMS ITEM
-    <div class="w-[80%] text-center sm:text-[20px] mt-5">
-      <p>
-            Rencontrez les équipes responsables de nos produits et découvrez
-            notre vision de l’avenir.
-      </p>
-    </div>
-    <NuxtLink class="text-[#5d3891] text-center w-[80%] sm:text-[18px] mt-3" to="/about">
-      {{ forme }}En savoir plus sur nos a propos de Nous
-    </NuxtLink>
-        <div class="mt-10 w-full h-[380px] sm:h-[700px]">
-          <img class="w-full h-full" src="/images/about0.1.jpg" alt="/images/about.jpg">
-        </div>
 
-        CONTACTS ITEM 
-        <div class="flex flex-col items-center text-center mt-[100px] w-[90%]">
+    <!-- ABOUT CONTENT  -->
+    <div class="flex flex-col items-center text-center w-full bg-white">
+      <div class="w-[90%]  lg:w-[60%] ">
+        <TitleH1 title="UNE ENTREPRISE QUI S'ENGAGE DANS UNE MISSION" />
+      </div>
+
+      <div class="flex flex-col gap-5 lg:flex-row  lg:items-center lg:justify-between  lg:py-16 w-[90%] lg:w-[80%] ">
+        <div class="flex justify-center w-full py-5 lg:py-0   lg:w-[60%]">
+          <div class="flex flex-col  items-center lg:items-start w-[90%]">
+            <div class="flex flex-col gap-4  justify-between  sm:text-[20px] mt-5 lg:text-start">
+              <div class="">
+                <TitleH2 title="Qui sommes nous ?"/>
+              </div>
+              <p>
+                FACKOP est groupe numérique qui propose des solutions afin d'accompagner les entreprises et les particuliers dans leur orientation numérique. Avec notre expertise en constante évolution, nous vous aidons à réussir dans l'univers numérique.
+              </p>
+            </div>
+            <router-link  class="text-[#5D3891] font-bold w-[80%] mt-3" to="/services">
+                  {{ forme }}En savoir plus sur nous
+            </router-link >
+          </div>
+        </div>
+        <div class="flex justify-center lg:w-[40%] h-[380px] ">
+          <img class="h-full  rounded-[15px]" src="/images/cardAbout.jpg" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 lg:flex-row  lg:items-center lg:justify-between  lg:py-16 w-[90%] lg:w-[80%] ">
+        <div class="flex justify-center w-full py-5 lg:py-0   lg:w-[60%]">
+          <div class="flex flex-col  items-center lg:items-start w-[90%]">
+            <div class="flex flex-col gap-4  justify-between  sm:text-[20px] mt-5 lg:text-start">
+              <div class="">
+                <TitleH2 title="Des créateurs et partenaires pationnés du numérique qui mettent la technologie au service du monde réel"/>
+              </div>
+              <p>
+                Rencontrez les équipes responsables de nos produits et découvrez
+                 notre vision de l’avenir.
+              </p>
+            </div>
+            <router-link  class="text-[#5D3891] font-bold w-[80%] mt-3" to="/services">
+                  {{ forme }}En savoir plus sur nous
+            </router-link >
+          </div>
+        </div>
+        <div class="flex justify-center lg:w-[40%] h-[380px] ">
+          <img class="h-full  rounded-[15px]" src="/images/cardAbout.jpg" alt="">
+        </div>
+      </div>
+      
+      
+        <!-- <div class="w-[90%]">
+          <div class="container">
+            <Fondator  image="/imageTests/profile3.jpg" name="JORDAN NTOUNTOUM" proffession="Directeur Artistique"/>
+            <Fondator image="/imageTests/profile4.jpg" name="TIKOUE TIKOUE BRAND" proffession="Data Scientist/Formateur Web"/>
+            <Fondator image="/imageTests/profile5.jpg" name="MOUSSAVOU LIONEL" proffession="Dev Full stack/Ingénieur Devops"/>
+          </div>
+        </div> -->
+    </div>
+    <!-- CONTACTS ITEM  -->
+    <div class="flex flex-col items-center text-center w-full bg-white">
+      <div class="flex flex-col items-center text-center mt-[100px] w-[90%]">
           <TitleH1 title="Nos contacts" />
           <div class="w-[80%] sm:text-[20px] mt-5">
             <p>
@@ -77,10 +92,49 @@
               part de vos besoins
             </p>
           </div>
-          <NuxtLink class="text-[#5d3891] w-[80%] sm:text-[18px] mt-3" to="/contact">
-              {{ forme }}En savoir plus sur nos contacts
-          </NuxtLink>
+          <router-link  class="text-[#5D3891] font-bold w-[80%] mt-3" to="/services">
+            {{ forme }}En savoir plus sur nos contacts
+          </router-link >
+      </div>
+
+      <div class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]">
+        <div class="containerVideo">
+          <video  muted
+            autoplay="true"
+            loop="true" class="video" src="/videos/contact.mp4" />
         </div>
+        <div class="flex absolute left-[30%] top-[40%] flex-col justify-between w-[150px] h-[80px]">
+            <NuxtLink
+              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
+              to="/contact"
+              >
+          Contact
+          </NuxtLink>
+            <NuxtLink
+              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
+              to="/newsletter"
+              >Newsletter</NuxtLink
+            >
+         </div>
+      </div>
+    </div>
+     <Footer/>
+  </div>
+      <!-- <Footer/> -->
+  
+ 
+  <!-- <div class="flex flex-col items-center w-full">
+   
+
+     
+
+    
+     TEAMS ITEM
+    <div class="w-[80%] text-center sm:text-[20px] mt-5">
+      <p>
+
+
+        
         <div class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]">
         <div class="containerVideo">
           <video  muted
@@ -93,8 +147,8 @@
               class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
               to="/contact"
               >
-		Contact
-		</NuxtLink>
+          Contact
+          </NuxtLink>
             <NuxtLink
               class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
               to="/newsletter"
@@ -113,7 +167,12 @@ import store from "../store"
 import TopHome from "../components/Home/TopHome.vue";
 import IntroOfThePage from "../components/Home/IntroOfThePage.vue";
 import Footer from '../components/Footer/Footer.vue';
-import Header from '../components/header/Header.vue';
+import TitleH1 from "../components/global/TitleH1.vue"
+import TitleH2 from "../components/global/TitleH2.vue"
+import Carrousel from "../components/Home/Carrousel.vue"
+import Fondator from "../components/Home/Fondator.vue"
+
+const forme = ">   ";
 </script>
 
 // import Footer from '../components/Footer/Footer.vue';
@@ -122,7 +181,7 @@ import Header from '../components/header/Header.vue';
 // import IntroOfThePage from "~~/components/Home/IntroOfThePage.vue";
 // import Carrousel from "../components/Home/Carrousel.vue"
 // import TitleH1 from "~~/components/Global/TitleH1.vue";
-// import Fondator from "../components/Home/Fondator.vue"
+// 
 // import { Icon } from "@iconify/vue";
 
 // const forme = ">   ";

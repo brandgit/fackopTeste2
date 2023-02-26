@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center w-full h-[100vh] relative bg-cover bg-no-repeat bg-center bg-[url('/images/backgroundFackop.png')]">
+  <div class="flex flex-col items-center w-full h-[500px] sm:h-full relative bg-cover bg-no-repeat bg-center bg-[url('/images/backgroundFackop.png')] text-[#fff]">
     <h1 class="w-[90%] text-[15px] sm:text-[20px] text-center mt-[110px]">Prenez part a l'expension du Numerique avec le GROUP FACKOP</h1>
     <div class="text-center mt-5 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
         <h1 class="font-bold ">FACKOP</h1>

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center relative mt-3 justify-center w-full h-[300px] sm:h-[350px] lg:h-[450px]">
+    <div class="relative mt-10 w-full h-[300px] sm:h-[450px] lg:h-[450px] bg-white">
         <div class="slider">
           <div class="slide-track">
             <div class="slide">
@@ -43,16 +43,16 @@
               </div>
           </div>
           <div
-            class="bottom-0 left-0 absolute rounded-tl-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
+            class="bottom-0 p-0 left-0 absolute rounded-tl-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
           ></div>
           <div
-            class="bottom-0 right-0 absolute rounded-tr-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
+            class="bottom-0 p-0 right-0 absolute rounded-tr-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
           ></div>
           <div
-            class="top-0 left-0 absolute rounded-bl-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
+            class="top-0 left-0 p-0 absolute rounded-bl-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
           ></div>
           <div
-            class="top-0 right-0 absolute rounded-br-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
+            class="top-0  right-0 p-0 absolute rounded-br-[100%] w-[50%] h-[30px] lg:h-[40px] bg-[white]"
           ></div>
         </div>
     </div>
