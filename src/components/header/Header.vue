@@ -23,8 +23,8 @@
 
 <template>
     <div class="wrappHeader">
-        <div class="flex justify-between items-center w-[90%] h-full ">
-            <div class="flex justify-between items-center h-full w-[120px]  sm:w-[155px]">
+        <div class="flex justify-between items-center w-[90%] h-full">
+            <div class="flex justify-between items-center h-full w-[120px] sm:w-[155px]">
                 <!-- Menu burger -->
                 <MenuBurger/>
                 <ContenteMenuBurger/>
@@ -36,9 +36,13 @@
             <NavgationHeader/>
 
             <!-- All Fackop -->
-            <div @click="StateAllFackop = true &&  !StateAllFackop" class="flex items-center cursor-pointer text-[11px] sm:text-[15px] ">
-                <h1 class="text-" >All Fackop ressources</h1>
-                <Icon class="text-white sm:ml-1 w-10 h-7" icon="ic:baseline-arrow-drop-down" />
+            <div class="flex items-center">
+                <div @click="StateAllFackop = true &&  !StateAllFackop" class="flex items-center cursor-pointer text-[11px] sm:text-[15px] bg-[yllow] ">
+                    <h1 class="invisible sm:visible" >All Fackop ressources</h1>
+                    <Icon class="text-white w-10 h-7" icon="ic:baseline-arrow-drop-down" />
+                </div>
+                <Icon class="text-white sm:ml-5 w-6 h-7" icon="mdi:github" />
+                <Icon class="text-white sm:ml-5 w-6 h-7" icon="basil:gmail-solid" />
             </div>
             <div :class="[StateAllFackop? 'nomodalCart' : 'modalCart' ]" @click="StateAllFackop = true &&  !StateAllFackop">
                 <div class="flex justify-end w-[90%] ">
@@ -67,9 +71,10 @@
     justify-content: center;
     width: 100%;
     height: 80px;
-    background-color: rgba(0, 0, 0, .4);
-    color: white;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
+    color: rgb(255, 255, 255);
 }
     .modalCart{
     display: flex;
@@ -81,6 +86,7 @@
     top: 0px;
     right: 0px;
     z-index: 2;
+    
 }
 .nomodalCart{
     display: flex;

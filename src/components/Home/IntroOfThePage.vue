@@ -1,12 +1,12 @@
 <template>
-     <div class="flex flex-col py-20 items-center w-full">
-      <TitleH1 title="GROUPE NUMERIQUE"/>
+     <div class="flex flex-col text-center py-10 items-center w-full">
+        <div class="w-[90%]">
+          <TitleH2 title="Créez l'histoires avec votre GROUPE NUMERIQUE"/>
+        </div>
       <div class="lg:flex lg:py-16 w-[90%]">
         <div class="w-full py-10 lg:py-0 lg:w-[40%]">
-          <div class="flex flex-col  w-[100%]">
-            <div class="w-[90%]">
-              <TitleH2 title="Créez l'histoires avec votre GROUPE NUMERIQUE"/>
-            </div>
+          <div class="flex flex-col items-center w-[100%]">
+            
             <div class="w-[80%] sm:text-[20px] mt-5">
               <p>
                 Ne restez pas en arrière en adoptez les technologies numériques
@@ -18,15 +18,6 @@
         </div>
       
         <div class="containerVideoTop">
-          <!-- <iframe
-          width="100%"
-          height="100%"
-      src="/videos/introHomePageVideo.mp4"
-      frameborder="0"
-      allow="autoplay"
-      controls="0"
-      allowfullscreen
-    ></iframe> -->
           <video 
           tabindex="-1"
           preload
@@ -36,15 +27,6 @@
         </div>
       </div>
     </div>
-          <iframe
-          width="100%"
-          height="100%"
-      src="/videos/introHomePageVideo.mp4"
-      frameborder="0"
-      allow="autoplay; fullscreen"
-      controls="0"
-      allowfullscreen
-    ></iframe>
 </template>
 
 <script setup>

@@ -1,6 +1,6 @@
 <template>
     <nav class="w-[55%] h-full">
-        <div class="flex items-center justify-end w-full h-full" >
+        <div class="flex items-center justify-center w-full h-full" >
             <div class="flex items-center justify-between  h-full w-[300px] ">
                 <router-link  @click="changeHome()"  class="flex items-center  h-full  " to="/"><h1 :class="[homeState? 'bottomBar' : null ]" >Presentation</h1></router-link>
                 <router-link @click="changeServices()" class="flex items-center  h-full  " to="/services"><h1 :class="[servicesState? 'bottomBar' :null ]">Services</h1></router-link>

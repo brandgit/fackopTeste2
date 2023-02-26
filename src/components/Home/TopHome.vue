@@ -1,10 +1,12 @@
 <template>
-  <div class="w-full h-[100vh] relative bg-cover bg-no-repeat bg-center bg-[url('/images/backgroundFackop.png')]">
-    <div class="flex flex-col top-[30%] sm:top-[35%] lg:top-[35%] absolute w-full z-1 bg-blck">
-      <div class=" w-[80%] ml-[5%] sm:w-[600px] sm:text-[50px] md:w-[700px] md:text-[60px] lg:w-[900px] xl:w-[900px] text-[33px]  lg:text-[75px] text-white">
-        <h1 class="font-bold ">Prenez part a l'expension du Numerique avec le GROUP FACKOP</h1>
-      </div>
-      <div class="  mt-[20px] sm:text-[20px] sm:h-[30px] w-[80%] h-[25px] ml-[5%]  text-white">
+  <div class="flex flex-col items-center w-full h-[100vh] relative bg-cover bg-no-repeat bg-center bg-[url('/images/backgroundFackop.png')]">
+    <h1 class="w-[90%] text-[15px] sm:text-[20px] text-center mt-[110px]">Prenez part a l'expension du Numerique avec le GROUP FACKOP</h1>
+    <div class="text-center mt-5 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
+        <h1 class="font-bold ">FACKOP</h1>
+        <h1 class="font-bold ">GROUPE NUMERIQUE</h1>
+    </div>
+    <p class="w-[90%] sm:w-[500px] text-center mt-[20px]">Des expériences innovantes permettant aux utilisateurs de bénéficier des avantages du Digital sans avoir à comprendre les détails techniques.</p>
+    <div class=" mt-[50px] absolute top-[80%] sm:text-[20px] sm:h-[30px] w-[90%] h-[25px] ml-[5%]  text-white">
         <div class="  top-0  h-[25px]  sm:h-[30px] overflow-hidden">
           <div class="contenent">
             <div class="block text-[white]">Group numerique</div>
@@ -15,7 +17,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
 

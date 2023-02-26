@@ -1,11 +1,10 @@
 <template>
     <Header/>
-    <RouterView/>
+    <router-view/>
 </template>
 
 <script setup>
     import Header from '../src/components/header/Header.vue';
-    import Footer from '../src/components/Footer/Footer.vue'
 </script>
 
 <style scoped>

@@ -1,12 +1,11 @@
 <template>
   <div class="wrapperHome"> 
-    
     <!-- Top Home page -->
     <TopHome/>
 
     <!-- Global presentation -->
     <IntroOfThePage/>
-     <div class="w-full h-[100vh] bg-black"></div>
+     <div class="w-full h-[100vh] bg-[#141414]"></div>
      <div class="w-full h-[100vh] bg-white"></div>
      <div class="w-full h-[100vh] bg-red-500"></div>
      <!-- Footer -->
@@ -114,7 +113,7 @@ import store from "../store"
 import TopHome from "../components/Home/TopHome.vue";
 import IntroOfThePage from "../components/Home/IntroOfThePage.vue";
 import Footer from '../components/Footer/Footer.vue';
-
+import Header from '../components/header/Header.vue';
 </script>
 
 // import Footer from '../components/Footer/Footer.vue';
@@ -130,8 +129,6 @@ import Footer from '../components/Footer/Footer.vue';
 
 <style scoped>
 .wrapperHome {
-  width: 100%;
-  background-color: white;
   overflow: hidden;
   overflow-y: scroll;
 }
