@@ -77,7 +77,7 @@
     <!-- CONTACTS ITEM  -->
     <div class="flex flex-col items-center text-center w-full bg-white">
       <div class="flex flex-col items-center text-center mt-[100px] w-[90%]">
-          <TitleH1 title="Nos contacts" />
+          <TitleH1 title="NOS CONTACTS" />
           <div class="w-[80%] sm:text-[20px] mt-5">
             <p>
               Nous sommes là pour vous accompagner, n'hésitez pas à nous faire
@@ -97,16 +97,16 @@
         </div>
         <div class="flex justify-center items-center absolute left-0 top-0 flex-col  w-full h-full">
            <div class="flex flex-col justify-between w-[150px] h-[80px]">
-            <NuxtLink
+            <router-link
               class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
               to="/contact">
                 Contact
-            </NuxtLink>
-            <NuxtLink
+            </router-link>
+            <router-link
               class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
               to="/newsletter">
                 Newsletter
-            </NuxtLink>
+            </router-link>
            </div>
          </div>
       </div>
