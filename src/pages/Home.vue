@@ -69,18 +69,10 @@
           </div>
         </div>
         <div class="flex justify-center lg:w-[40%] h-[380px] ">
-          <img class="h-full  rounded-[15px]" src="/images/cardAbout.jpg" alt="">
+          <img class="h-full  rounded-[15px]" src="/images/about.jpg" alt="">
         </div>
       </div>
       
-      
-        <!-- <div class="w-[90%]">
-          <div class="container">
-            <Fondator  image="/imageTests/profile3.jpg" name="JORDAN NTOUNTOUM" proffession="Directeur Artistique"/>
-            <Fondator image="/imageTests/profile4.jpg" name="TIKOUE TIKOUE BRAND" proffession="Data Scientist/Formateur Web"/>
-            <Fondator image="/imageTests/profile5.jpg" name="MOUSSAVOU LIONEL" proffession="Dev Full stack/Ingénieur Devops"/>
-          </div>
-        </div> -->
     </div>
     <!-- CONTACTS ITEM  -->
     <div class="flex flex-col items-center text-center w-full bg-white">
@@ -103,18 +95,19 @@
             autoplay="true"
             loop="true" class="video" src="/videos/contact.mp4" />
         </div>
-        <div class="flex absolute left-[30%] top-[40%] flex-col justify-between w-[150px] h-[80px]">
+        <div class="flex justify-center items-center absolute left-0 top-0 flex-col  w-full h-full">
+           <div class="flex flex-col justify-between w-[150px] h-[80px]">
             <NuxtLink
               class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/contact"
-              >
-          Contact
-          </NuxtLink>
+              to="/contact">
+                Contact
+            </NuxtLink>
             <NuxtLink
               class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/newsletter"
-              >Newsletter</NuxtLink
-            >
+              to="/newsletter">
+                Newsletter
+            </NuxtLink>
+           </div>
          </div>
       </div>
     </div>
