@@ -15,7 +15,7 @@
           <img src="/carrousel/immo1.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="/carrousel/llivraison2.jpg" alt="" />
+          <img src="/carrousel/livraison2.jpg" alt="" />
           <img src="/carrousel/ville.jpg" alt="" />
         </div>
         <div class="slide">
