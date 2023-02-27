@@ -59,7 +59,7 @@
           <img src="/carrousel/marche.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="/carrousel/march.jpg" alt="" />
+          <img src="/carrousel/marche.jpg" alt="" />
           <img src="/carrousel/livraison3.jpg" alt="" />
         </div>
         <div class="slide">
