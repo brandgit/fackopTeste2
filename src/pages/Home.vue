@@ -26,7 +26,7 @@
 
 
     <!-- ABOUT CONTENT  -->
-    <div class="flex flex-col items-center text-center w-full bg-white">
+    <div class="flex flex-col items-center text-center w-full bg-white pb-16">
       <div class="w-[90%]  lg:w-[60%] ">
         <TitleH1 title="UNE ENTREPRISE QUI S'ENGAGE DANS UNE MISSION" />
       </div>
@@ -72,87 +72,12 @@
           <img class="h-full  rounded-[15px]" src="/images/about.jpg" alt="">
         </div>
       </div>
-      
     </div>
     <!-- CONTACTS ITEM  -->
-    <div class="flex flex-col items-center text-center w-full bg-white">
-      <div class="flex flex-col items-center text-center mt-[100px] w-[90%]">
-          <TitleH1 title="NOS CONTACTS" />
-          <div class="w-[80%] sm:text-[20px] mt-5">
-            <p>
-              Nous sommes là pour vous accompagner, n'hésitez pas à nous faire
-              part de vos besoins
-            </p>
-          </div>
-          <router-link  class="text-[#5D3891] font-bold w-[80%] mt-3" to="/services">
-            {{ forme }}En savoir plus sur nos contacts
-          </router-link >
-      </div>
-
-      <div class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]">
-        <div class="containerVideo">
-          <video  muted
-            autoplay="true"
-            loop="true" class="video" src="/videos/contact.mp4" />
-        </div>
-        <div class="flex justify-center items-center absolute left-0 top-0 flex-col  w-full h-full">
-           <div class="flex flex-col justify-between w-[150px] h-[80px]">
-            <router-link
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/contact">
-                Contact
-            </router-link>
-            <router-link
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/newsletter">
-                Newsletter
-            </router-link>
-           </div>
-         </div>
-      </div>
-    </div>
-     <Footer/>
-  </div>
-      <!-- <Footer/> -->
-  
- 
-  <!-- <div class="flex flex-col items-center w-full">
-   
-
-     
-
+    <ContactItem/>
     
-     TEAMS ITEM
-    <div class="w-[80%] text-center sm:text-[20px] mt-5">
-      <p>
-
-
-        
-        <div class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]">
-        <div class="containerVideo">
-          <video  muted
-            autoplay="true"
-            loop="true" class="video" src="/videos/contact.mp4" />
-        </div>
-        <div class="flex justify-center items-center w-full h-full top-0 left-0 absolute">
-          <div class="flex flex-col justify-between w-[150px] h-[80px]">
-            <NuxtLink
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/contact"
-              >
-          Contact
-          </NuxtLink>
-            <NuxtLink
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/newsletter"
-              >Newsletter</NuxtLink
-            >
-         </div>
-        </div>
-      </div>
-      
-       
-  </div> -->
+    <Footer/>
+  </div>
 </template>
 <script setup >
 import { computed } from 'vue';
@@ -163,21 +88,10 @@ import Footer from '../components/Footer/Footer.vue';
 import TitleH1 from "../components/global/TitleH1.vue"
 import TitleH2 from "../components/global/TitleH2.vue"
 import Carrousel from "../components/Home/Carrousel.vue"
-import Fondator from "../components/Home/Fondator.vue"
+import ContactItem from '../components/global/ContactItem.vue';
 
 const forme = ">   ";
 </script>
-
-// import Footer from '../components/Footer/Footer.vue';
-// 
-// import Footer from "~~/components/Global/Footer/Footer.vue";
-// import IntroOfThePage from "~~/components/Home/IntroOfThePage.vue";
-// import Carrousel from "../components/Home/Carrousel.vue"
-// import TitleH1 from "~~/components/Global/TitleH1.vue";
-// 
-// import { Icon } from "@iconify/vue";
-
-// const forme = ">   ";
 
 <style scoped>
 .wrapperHome {
@@ -188,62 +102,4 @@ const forme = ">   ";
   background-color: transparent;
   width: 0px;
 }
-
-.containerVideo {
-  min-height: 60%;
-  height: 100%;
-  position: relative;
-  min-width: 200px;
-}
-.containerVideo .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 1200px;
-  width: 100%;
-  gap: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 30px;
-}
-
-
-@media (min-width: 500px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-  }
-}
-@media (min-width: 650px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    height: 300px;
-  }
-}
-@media (min-width: 750px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-  }
-}
-@media (min-width: 850px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-  }
-}
-
-
 </style>

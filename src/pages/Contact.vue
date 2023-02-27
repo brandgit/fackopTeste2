@@ -1,16 +1,67 @@
 <template>
-  <div class="wrapperPages">
-    <h1>Contact PAGE</h1>
-    <div class="w-full h-[100vh] bg-amber-500">
+    <div class="wrapperContactPage">
+        <!-- Top on the page -->
+        <div class="flex flex-col items-center w-full h-[450px] md:h-[550px]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/contactImage.jpg')] text-[#fff]">
+        <h1 class="w-[90%] text-[15px] sm:text-[20px] text-center mt-[110px]">Nos agents à votre écoute</h1>
+        <div class="text-center mt-10 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
+          <h1 class="font-bold ">LISTENING...</h1>
+        </div>
+        <div class="w-[90%] sm:w-[60%] text-center mt-[20px]">
+            <p>
+              Nous nous mettons à votre service afin d’assurer le conseil , la
+            conception et le suivi de solutions numériques d’une entité
+            professionnelle.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex justify-center w-full ">
+      <div class="flex flex-col gap-10 w-[90%] sm:w-[70%] py-10 text-white">
+          <div class="flex justify-between w-full">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+              <Icon class=" w-[60%] h-[60%] " icon="mdi:github" />
+            </div>
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+              <Icon class="w-[60%] h-[60%]" icon="basil:gmail-solid" />
+            </div>
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+              <Icon class="w-[60%] h-[60%]" icon="ant-design:twitter-circle-filled" />
+            </div>
+          </div>
+          <div class="flex justify-between w-full">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+              <Icon class="w-[60%] h-[60%]" icon="basil:gmail-solid" />
+            </div>
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+              <Icon class="w-[60%] h-[60%]" icon="ph:instagram-logo-bold" />
+            </div>
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+              <Icon class="w-[60%] h-[60%]" icon="icon-park-outline:youtube" />
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-full">
+      <div class="flex flex-col items-center text-center w-[90%] py-10">
+        <TitleH1 title="RESTEZ A L'AFFUT AVEC FACKOP" />
+        <div class="w-[100%] sm:w-[60%] text-center mt-[20px]">
+              <p>
+                Recevez des mises à jour sur FACKOP en recevant notre newsletter qui comprend les dernières nouvelles, mises à jour de produits et ressources. Inscrivez-vous ci-dessous!
+              </p>
+        </div>
+      </div>
+      <div class="w-[95%] bg-violet-900">
+        <TitleH2 title="Abonnez-vous à la newsletter" />
+        <input
+                  type="text"
+                  placeholder="Saisissez votre adresse e-mail"
+                  name="Prenom"
+                  class="px-2 py-1 border border-gray-400"
+                />
+      </div>
 
     </div>
-    <div class="w-full h-[100vh] bg-[green]">
-
-    </div>
-    <div class="w-full h-[100vh] bg-[violet]">
-
-    </div>
-    <!-- <Footer/> -->
+    <Footer/>
   </div>
   
   <!-- <div class="wrapperNewsletter">
@@ -22,9 +73,7 @@
           class="w-[70%] font-bold sm:text-[20px] md:text-[30px] lg:text-[35px] mt-5"
         >
           <p>
-            Nous nous mettons à votre service afin d’assurer le conseil , la
-            conception et le suivi de solutions numériques d’une entité
-            professionnelle.
+           
           </p>
         </div>
         <NuxtLink
@@ -182,11 +231,28 @@
 </template>
 
 <script setup>
-// import { Icon } from "@iconify/vue";
+import TitleH1 from "../components/global/TitleH1.vue"
+import TitleH2 from "../components/global/TitleH2.vue"
+import { Icon } from '@iconify/vue';
 import Footer from '../components/Footer/Footer.vue';
 </script>
 
 <style scoped>
+.wrapperContactPage {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #5d3891; */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.wrapperContactPage::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+
+
+
 .wrapperNewsletter {
   background-color: #f1f3f2;
 }

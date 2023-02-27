@@ -1,293 +1,108 @@
 
 <script setup>
+import ContactItem from '../components/global/ContactItem.vue';
+import TitleH1 from "../components/global/TitleH1.vue"
+import TitleH2 from "../components/global/TitleH2.vue"
 import Footer from '../components/Footer/Footer.vue';
+
+const forme = ">   ";
 </script>
 
 <template>
-  <div class="wrapperPages">
-    <h1>Services ok PAGE</h1>
+  <div class="wrapperServicePage">
+
+    <!-- Top on the page -->
+    <div class="flex flex-col items-center w-full h-[100vh]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/servicesImage2.jpg')] text-[#fff]">
+      <h1 class="w-[90%] text-[15px] sm:text-[20px] text-center mt-[110px]">Nos services à votre disposition</h1>
+      <div class="text-center mt-10 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
+        <h1 class="font-bold ">FACKOP</h1>
+      </div>
+      <div class="w-[90%] sm:w-[60%] text-center mt-[20px]">
+          <p>
+              Nous offrons des solutions digitales performantes et personnalisées pour aider les entreprises de toutes tailles à réussir sur le marché. Notre approche innovante et notre expérience utilisateur fluide sont conçues pour atteindre des résultats concrets et maximiser votre succès.
+          </p>
+      </div>
+    </div>
+
+    <!-- Nos services -->
+    <div class="flex flex-col text-center items-center w-full py-16">
+      <div class="w-[100%] mb-7">
+        <TitleH1 title="NOS SERVICES" />
+      </div>
+
+      <div class="wrapperServiceItem">
+        <div class=" w-full justify-center py-10">
+                  <TitleH2 title="KIDANGUI"/>
+        </div>
+        <div class="flex flex-col items-center gap-5 lg:flex-row  lg:items-center lg:justify-between  w-[100%] lg:w-[100%] ">
+          <div class="flex justify-center w-full lg:w-[60%]">
+          
+            <div class="flex flex-col  items-center lg:items-start w-[90%]">
+              
+              <div class="flex flex-col gap-4  justify-between  sm:text-[20px] mt-5 lg:text-start">
+                
+                <p class="flex flex-col w-full text-start">
+                  <strong>{{ forme }} Numériques </strong>
+                  <strong>{{ forme }} Marketing digital </strong>
+                </p>
+                <p>
+                    Nous nous mettons à votre service afin d’assurer le conseil,la
+                  conception et le suivi des solutions numériques de votre
+                  société.<br />
+                  <br />
+                  Afin de vous permettre d’avoir un meilleur suivi organisationnel
+                  et opérationnel, <br />
+                  nous disposons des compétences pluridisciplinaires qui se
+                  diversifient selon la taille aini que le secteur de votre
+                  entreprise.
+                </p>
+              </div>
+              <router-link  class="text-[#5D3891] font-bold w-[80%] mt-3" to="/services">
+                    {{ forme }}Accedez au service
+              </router-link >
+            </div>
+          </div>
+          <div class="flex justify-center cursor-pointer w-[90%] rounded-[15px] lg:w-[40%] lg:mr-[2.5%] h-[250px] bg-[url('/images/backgroundKidangui.jpg')]">
+            <div class=" flex flex-col justify-evenly w-[95%] h-full">
+              <p>Nous sommes une agence digitale spécialisée dans la création de solutions numériques et l'accompagnement des entreprises de toutes tailles à réussir sur le marché</p>
+              <h1>KIDANGUI</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <ContactItem/>
     <Footer/>
   </div>
 
-  
-  <!-- <div class="wrapperservices">
-    <topservices /> -->
-    <!-- <div
-      class="flex flex-col items-center text-black text-center mt-[100px] w-[100%]"
-    >
-      <TitleH1 title=" NOS SERVICES :" />
-      <div class="w-[90%] sm:text-[20px] mt-5">
-        <p>
-          Le <Strong>GROUPE FACKOP</Strong> est spécialisé dans l'utilisation
-          des technologies innovantes afin <br />
-          de vous faire découvir les avantages du Numérique , de l'Informatique
-          et du Marketing Digital.
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col justify-center items-center w-full">
-      <section class="presentation">
-        <div class="content">
-          <img src="/Images/Fackopimg0.jpg" />
-          <div class="text">
-            <h1><strong>KIDANGUI</strong></h1>
-            <h3>
-              <strong> Numériques & Marketing digital </strong>
-            </h3>
-            <p>
-              Nous nous mettons à votre service afin d’assurer le conseil,la
-              conception et le suivi des solutions numériques de votre
-              société.<br />
-              <br />
-              Afin de vous permettre d’avoir un meilleur suivi organisationnel
-              et opérationnel, <br />
-              nous disposons des compétences pluridisciplinaires qui se
-              diversifient selon la taille aini que le secteur de votre
-              entreprise.
-            </p>
-
-            <NuxtLink
-              class="flex cursor-pointer w-[20%] h-[35%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/kidangui"
-            >
-              <h2>Learn more</h2>
-            </NuxtLink>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div
-      class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]"
-    >
- 
-      <video
-        autoplay="true"
-        loop="true"
-        class="video"
-        src="/Video/contact.mp4"
-      ></video>
-      <div
-        class="absolute top-0 left-0 flex items-center justify-center w-full h-full"
-      >
-        <div class="flex flex-col justify-between w-[150px] h-[80px]">
-          <NuxtLink
-            class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-            to="/contact"
-          >
-            Contact
-          </NuxtLink>
-
-          <NuxtLink
-            class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-            to="/newsletter"
-          >
-            Newsletter
-          </NuxtLink>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <style scoped>
-.wrapperservices {
-  background-color: #f1f3f2;
-}
-
-.video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/*.servicesbg {
+.wrapperServicePage {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90.21deg, #f8f9f9 -5.91%, #191a1aea 90.58%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-color: #5d3891; */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.wrapperServicePage::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+.wrapperServiceItem{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}*/
+  width:90% ;
+  background-color: #141414;
+  color: white;
+  border-radius: 15px;
+  padding-bottom: 50px;
 
-.presentation {
-  width: 100%;
-  height: 100vh;
-  background-color: #f1f3f2;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
-.presentation .content img {
-  height: auto;
-  width: 360px;
-  max-width: 90%;
-}
-
-.content {
-  width: 1200px;
-  max-width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-.text {
-  width: 450px;
-  max-width: 100%;
-  padding: 0 10px;
-  color: #141414;
-}
-.text h1 {
-  color: #141414;
-  font-size: 65px;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-}
-
-.text h3 {
-  color: #5d3891;
-  font-size: 25px;
-  margin-bottom: 25px;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-}
-
-.text p {
-  color: black;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  margin-bottom: 35px;
-}
-
-.text h2 {
-  border: 2px solid transparent;
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.text h2:hover {
-  transform: scale(1.2);
-  background-color: black;
-  border: 2px solid #f1f3f2;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1180px) {
-  .services {
-    width: 100%;
-    height: auto;
-    padding: 70px 0px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .services .content img {
-    margin-bottom: 35px;
-  }
-  .text h1 {
-    font-size: 60px;
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .presentation {
-    width: 100%;
-    height: auto;
-    padding: 70px 0px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .presentation .content img {
-    margin-bottom: 35px;
-  }
-  .text h1 {
-    font-size: 60px;
-    margin-bottom: 25px;
-  }
-}
-/*.main {
-  width: 500px;
-  max-width: 95%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}*/
-.row {
-  height: auto;
-  width: 500px;
-  margin-right: 20%;
-  padding-right: 30%;
-  position: relative;
-}
-
-@media (min-width: 600px) {
-  .container {
-    grid-template: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 900px) {
-  .container {
-    grid-template: repeat(3, 1fr);
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .slider .slide {
-    height: 500px;
-    width: 350px;
-  }
-}
-@media screen and (min-width: 1020px) {
-  .slider .slide {
-    height: 450px;
-    width: 350px;
-  }
-}
 </style>
