@@ -1,6 +1,38 @@
 <template>
-  <div class="wrapperPages">
-    <h1>About PAGE</h1>
+  <div class="wrapperAboutPage">
+    <!-- Top on the page -->
+    <div class="flex flex-col items-center w-full h-[500px]  sm:h-[100vh]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/aboutYou.jpg')] text-[#fff]">
+
+      <div class="text-center mt-52 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
+        <h1 class="font-bold  ">LE GROUPE FACKOP</h1>
+      </div>
+      <div class="w-[90%] sm:w-[60%] text-center mt-[20px]">
+        <p>
+            FACKOP est un GROUPE NUMERIQUE qui a pour but de développer des
+            solutions numériques et informatiques afin de faire en profité le
+            plus grand nombre
+          </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center text-center mt-[50px] bg-green-500 w-full">
+      <div class="w-[90%]">
+        <TitleH1 title="CORE MEMBERS" />
+      </div>
+      <div class="w-[80%] sm:text-[20px] mt-5">
+        <p>
+            Des créateurs et partenaires pationnés du numérique qui mettent la
+            technologie au service du monde réel
+        </p>
+      </div>
+      <div class="container">
+          <!-- <Fondator  image="/imageTests/profile3.jpg" name="JORDAN NTOUNTOUM" proffession="Directeur Artistique"/> -->
+          <Fondator image="/imageTests/profile4.jpg" name="TIKOUE TIKOUE BRAND" proffession="Data Scientist/Formateur Web"/>
+          <Fondator image="/imageTests/profile5.jpg" name="MOUSSAVOU LIONEL" proffession="Dev Full stack/Ingénieur Devops"/>
+      </div>
+    </div>
+    
+    <ContactItem/>
     <Footer/>
   </div>
   
@@ -170,35 +202,63 @@
 
 <script setup>
 // import { Icon } from "@iconify/vue";
+import ContactItem from '../components/global/ContactItem.vue';
+import Fondator from "../components/Home/Fondator.vue"
+import TitleH1 from "../components/global/TitleH1.vue"
 import Footer from '../components/Footer/Footer.vue';
 </script>
 
 <style scoped>
-
-
-
-/* .containerVideo .videoTop {
-  position: absolute;
-  top: 0;
-  left: 0;
+.wrapperAboutPage {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
+  height: 100vh;
+  /* background-color: #5d3891; */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.wrapperAboutPage::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  width: 90%;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
 }
 
-.containerVideo {
-  min-height: 60%;
-  height: 100%;
-  position: relative;
-  min-width: 200px;
+
+@media (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+  }
 }
-.containerVideo .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+@media (min-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+}
+@media (min-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+  }
+}
+@media (min-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+  }
+}
+
 </style>

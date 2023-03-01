@@ -1,6 +1,6 @@
 
 <script setup>
-import ContactItem from '../components/global/ContactItem.vue';
+import ContactItem from '../components/global/ContactItem.vue'
 import TitleH1 from "../components/global/TitleH1.vue"
 import TitleH2 from "../components/global/TitleH2.vue"
 import Footer from '../components/Footer/Footer.vue';
@@ -12,7 +12,7 @@ const forme = ">   ";
   <div class="wrapperServicePage">
 
     <!-- Top on the page -->
-    <div class="flex flex-col items-center w-full h-[100vh]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/servicesImage2.jpg')] text-[#fff]">
+    <div class="flex flex-col items-center w-full h-[500px]  sm:h-[100vh]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/servicesImage2.jpg')] text-[#fff]">
       <h1 class="w-[90%] text-[15px] sm:text-[20px] text-center mt-[110px]">Nos services à votre disposition</h1>
       <div class="text-center mt-10 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
         <h1 class="font-bold ">FACKOP</h1>
