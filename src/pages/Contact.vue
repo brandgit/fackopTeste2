@@ -18,24 +18,24 @@
     <div class="flex justify-center w-full ">
       <div class="flex flex-col gap-10 w-[90%] sm:w-[70%] py-10 text-white">
           <div class="flex justify-between w-full">
-            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]  md:w-[200px] md:h-[200px] bg-black rounded-[100%]">
               <Icon class=" w-[60%] h-[60%] " icon="mdi:github" />
             </div>
-            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]  md:w-[200px] md:h-[200px] bg-black rounded-[100%]">
               <Icon class="w-[60%] h-[60%]" icon="basil:gmail-solid" />
             </div>
-            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]  md:w-[200px] md:h-[200px] bg-black rounded-[100%]">
               <Icon class="w-[60%] h-[60%]" icon="ant-design:twitter-circle-filled" />
             </div>
           </div>
           <div class="flex justify-between w-full">
-            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]  md:w-[200px] md:h-[200px] bg-black rounded-[100%]">
               <Icon class="w-[60%] h-[60%]" icon="basil:gmail-solid" />
             </div>
-            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]  md:w-[200px] md:h-[200px] bg-black rounded-[100%]">
               <Icon class="w-[60%] h-[60%]" icon="ph:instagram-logo-bold" />
             </div>
-            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] bg-black rounded-[100%]">
+            <div class="flex justify-center items-center cursor-pointer w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]  md:w-[200px] md:h-[200px] bg-black rounded-[100%]">
               <Icon class="w-[60%] h-[60%]" icon="icon-park-outline:youtube" />
             </div>
           </div>
@@ -50,92 +50,15 @@
               </p>
         </div>
       </div>
-      <div class="w-[95%] bg-violet-900">
-        <TitleH2 title="Abonnez-vous à la newsletter" />
-        <input
-                  type="text"
-                  placeholder="Saisissez votre adresse e-mail"
-                  name="Prenom"
-                  class="px-2 py-1 border border-gray-400"
-                />
-      </div>
 
-    </div>
-    <Footer/>
-  </div>
-  
-  <!-- <div class="wrapperNewsletter">
-    <div class="flex flex-col items-center w-full">
-      <div
-        class="flex flex-col items-center text-black text-center mt-[150px] w-[90%]"
-      >
-        <div
-          class="w-[70%] font-bold sm:text-[20px] md:text-[30px] lg:text-[35px] mt-5"
-        >
-          <p>
-           
-          </p>
-        </div>
-        <NuxtLink
-          class="text-[#5D3891] w-[80%] sm:text-[18px] py-5 mt-3"
-          to="/services"
-          >En savoir plus sur nos Services</NuxtLink
-        >
-      </div>
-      <div class="flex justify-center w-full">
-        <div class="mt-10 w-[100%] h-[400px] sm:h-[700px]">
-          <div class="containerVideo">
-            <video
-              muted
-              autoplay="true"
-              loop="true"
-              class="video"
-              src="/Video/Fackopvideo7.mp4"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col items-center text-black text-center mt-[100px] w-[100%]"
-      >
-        <TitleH1 title="Rejoignez le groupe FACKOP" />
-        <div class="w-[90%] sm:text-[20px] mt-5">
-          <p>
-            Nous nous mettons à votre service afin d’assurer le conseil , la
-            conception et le suivi de solutions numériques d’une entité
-            professionnelle.
-          </p>
-          <NuxtLink
-            class="text-[#5D3891] w-[80%] sm:text-[18px] py-5 mt-3"
-            to="/about"
-            >En savoir plus sur nous</NuxtLink
-          >
-        </div>
-      </div>
-      <div class="flex justify-center w-full">
-        <div class="mt-10 w-[100%] h-[400px] sm:h-[700px]">
-          <div class="containerVideo">
-            <video
-              muted
-              autoplay="true"
-              loop="true"
-              class="video"
-              src="/Video/Fackopvideo6.mp4"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="min-h-screen py-40" style="background-color: #f1f3f2">
+      <div class="min-h-screen py-5" style="background-color:">
       <div class="container mx-auto">
         <div
-          class="flex flex-col w-10/12 mx-auto overflow-hidden bg-white shadow-lg lg:flex-row lg:w-8/12 rounded-xl"
+          class="flex flex-col gap-5 w-10/12 mx-auto overflow-hidden bg-white shadow-lg lg:flex-row lg:w-8/12 rounded-xl"
         >
           <div
             class="flex flex-col items-center justify-center w-full p-12 bg-center bg-no-repeat bg-cover lg:w-1/2"
-            style="background-image: url('/Images/Fackopcontactcover1.jpg')"
+            style="background-image: url('/images/Fackopcontactcover1.jpg')"
           >
             <h1 class="mb-3 text-3xl text-white font-bold">Bienvenue</h1>
             <div>
@@ -151,46 +74,50 @@
               </p>
             </div>
           </div>
-          <div class="w-full px-12 py-16 lg:w-1/2">
-            <h2 class="mb-4 text-3xl font-bold text-[#5D3891]">Contact</h2>
+          <div class="w-full py-16 lg:w-1/2">
+            <div class="w-[100%] mb-7">
+              <TitleH1 title="CONTACT" />
+            </div>
+            <!-- <h2 class="mb-4 text-3xl font-bold text-[#5D3891]">Contact</h2> -->
             <p class="mb-4">Contactez-nous</p>
-            <form target="_blank" action="https://formsubmit.co/tikouetikouebrand@gmail.com" method="POST">
-              <div class="grid grid-cols-2 gap-5">
+            <form class="flex flex-col gap-4 w-full" target="_blank" action="https://formsubmit.co/tikouetikouebrand@gmail.com" method="POST">
+              <!-- <div class=""> -->
+                <input type="text" placeholder="Saisissez votre adresse e-mail" name="Prenom" class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"/>
                 <input
                   type="text"
                   placeholder="Nom"
                   name="Nom"
-                  class="px-2 py-1 border border-gray-400"
+                  class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                 />
                 <input
                   type="text"
                   placeholder="Prénom"
                   name="Prenom"
-                  class="px-2 py-1 border border-gray-400"
+                  class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                 />
-              </div>
-              <div class="mt-5">
+              <!-- </div> -->
+              <!-- <div class="mt-5"> -->
                 <input
                   type="email"
                   placeholder="Email"
                   name="Email"
-                  class="w-full px-2 py-1 border border-gray-400"
+                  class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                   required
                 />
-              </div>
-              <div class="mt-5">
+              <!-- </div> -->
+              <!-- <div class="mt-5"> -->
                 <input
                   type="text"
                   number="number"
                   name="Number"
                   placeholder="Entrer votre numéro de téléphone"
                   autocomplete="off"
-                  class="w-full px-2 py-1 border border-gray-400"
+                  class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                   required
                 />
-              </div>
+              <!-- </div> -->
 
-              <div class="mt-5">
+              <!-- <div class="mt-5"> -->
                 <textarea
                   rows="5"
                   cols="60"
@@ -198,12 +125,12 @@
                   placeholder="Entrer votre message "
                   autocomplete="off"
                   required
-                  class="w-full px-2 py-1 border border-gray-400"
+                  class="w-full rounded-[10px] px-2 py-1 bg-[grey]"
                 ></textarea>
-              </div>
+              <!-- </div> -->
 
-              <div class="mt-5">
-                <input type="checkbox" class="border border-gray-400" />
+              <div >
+                <input type="checkbox" class="border bg-[grey]" />
                 <span>
                   J'accepte les Conditions
                   <a href="#" class="font-semibold text-[#5D3891]-500"
@@ -217,7 +144,7 @@
               </div>
               <div class="mt-5">
                 <button
-                  class="w-full py-3 text-center text-white bg-purple-500"
+                  class="w-full py-3 rounded-[10px] text-center text-white bg-purple-500"
                 >
                   Envoyez
                 </button>
@@ -227,7 +154,13 @@
         </div>
       </div>
     </div>
-  </div> -->
+    <ContactItem/>
+    </div>
+    <!-- <ContactItem/> -->
+    <Footer/>
+  </div>
+  
+ 
 </template>
 
 <script setup>
@@ -235,6 +168,7 @@ import TitleH1 from "../components/global/TitleH1.vue"
 import TitleH2 from "../components/global/TitleH2.vue"
 import { Icon } from '@iconify/vue';
 import Footer from '../components/Footer/Footer.vue';
+import ContactItem from "../components/global/ContactItem.vue"
 </script>
 
 <style scoped>
