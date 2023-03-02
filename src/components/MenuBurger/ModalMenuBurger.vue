@@ -59,7 +59,7 @@
     position: fixed;
     transition: ease-out 0.5s;
     font-family: monospace;
-    background-color: blue;
+    background-color: red;
 
     }
     .notActive{

@@ -1,6 +1,8 @@
 <template>
     <div @click="modalHandler()" :class="[stateManu ? 'notActive' : 'active']">
-<div class="h-full w-1/2 bg-black"></div>
+        <div class="wrapperContainerMenuBurger">
+        
+        </div>
     </div>
 </template>
 
@@ -28,11 +30,8 @@ import { computed } from 'vue';
     position: fixed;
     transition: ease-out 0.5s;
     font-family: monospace;
-    background-color: blue;
 
-    }
-
-    
+    }    
     .notActive{
         display: flex;
         position: fixed;
@@ -50,7 +49,14 @@ import { computed } from 'vue';
     align-items: flex-end;
     width: 250px;
     height: 100%;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapperContainerMenuBurger{
+    width: 300px;
+    height: 100%;
     backdrop-filter: blur(15px);
-        background-color:rgb(0, 0, 0, .5);
+    background-color:rgba(0, 0, 0, .5);
 }
 </style>
