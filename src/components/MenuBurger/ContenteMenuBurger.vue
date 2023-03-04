@@ -1,8 +1,8 @@
 <template>
     <div @click="modalHandler()" class="flex fixed w-full h-screen z-20  top-[80px] left-0 ease-out duration-500 bg-[rd] " :class="[stateManu ? 'left-[-100%]' : 'left-0']" >
-        <div class="flex flex-col w-full h-full bg-black bg-opacity-50 backdrop-blur-[15px] ">
+        <div class="flex flex-col w-full sm:w-[400px] h-full bg-black bg-opacity-50 backdrop-blur-[15px] ">
           
-            <div class="flex flex-col gap-10 h-[75%] bg-black">
+            <div class="flex flex-col gap-10 h-[75%]">
                 <div class="ml-[5vw] h-[130px] w-[95%]">
                     <div class="flex font-bold items-center cursor-pointer mt-5 text-[15px]">
                         <h1>MENU</h1>
@@ -33,8 +33,10 @@
                 <div class='flex w-full h-full text-[14px] border-t-[#d2caca] border-solid border-t-[2px] text-[#d2caca]'>
                     <div class='flex text-xs mt-[4%] flex-col items-center w-[100%] '>
                         <p>Copyright - Fackop © 2023 Inc.</p>
-                        <p class="sm:ml-5">Tous droits réservés.</p>
-                        <p class="sm:ml-5">Mentions légales</p>
+                        <div class="sm:flex">
+                            <p class="">Tous droits réservés.</p>
+                            <p class="sm:ml-5">Mentions légales</p>
+                        </div>
                     </div>
                 </div>
             </div>
