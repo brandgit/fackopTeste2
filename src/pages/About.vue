@@ -38,7 +38,7 @@
               Accompagner les entreprise dans leur developpement
           </p>
           <div class="flex flex-col md:flex-row-reverse md:justify-between items-center">
-            <img class="mt-10 rounded-[15px] md:w-[50%]" src="images/serviceAbout1.jpg" alt="">
+            <img class="mt-10 rounded-[15px] md:w-[50%]" src="/images/serviceAbout1.jpg" alt="">
             <p class="sm:text-[1.3rem] md:text-[1rem] lg:text-[1.4rem] mt-5 md:w-[45%]">
               Nous sommes là pour vous accompagner dans votre développement, car ous croyons que les entreprises sont les moteurs de la croissance économique, et nous sommes déterminés à vous aider à atteindre vos objectifs en vous fournissant les outils et le soutien dont vous avez besoin. 
             </p>
@@ -51,7 +51,7 @@
             Facilité l'accès le quotidien de tous 
           </p>
           <div class="flex flex-col md:flex-row md:justify-between items-center">
-            <img class="mt-10 rounded-[15px] md:w-[50%]" src="images/serviceAbout4.jpg" alt="">
+            <img class="mt-10 rounded-[15px] md:w-[50%]" src="/images/serviceAbout4.jpg" alt="">
             <p class="sm:text-[1.3rem] md:text-[1rem] lg:text-[1.4rem] mt-5 md:w-[45%]">
               Grâce à nos solutions innovante, nous rendons l'accès à un large éventail de services quotidiens plus facile et plus rapide que jamais. Du shopping au transport en passant par solution de diverses domaines d'activités, nous vous offrons un moyen simple de gérer votre vie quotidienne.  
             </p>
@@ -64,7 +64,7 @@
             Promouvoir le numérique
           </p>
           <div class="flex flex-col md:flex-row-reverse md:justify-between items-center">
-            <img class="mt-10 rounded-[15px] md:w-[50%]" src="images/serviceAboute2.jpg" alt="">
+            <img class="mt-10 rounded-[15px] md:w-[50%]" src="/images/serviceAboute2.jpg" alt="">
             <p class="sm:text-[1.3rem] md:text-[1rem] lg:text-[1.4rem] mt-5 md:w-[45%]">
               De la simplification des tâches quotidiennes à l'accès à des informations plus vastes, nous vous montrerons comment le numérique peut vous faciliter la vie. Rejoignez-nous dans notre mission pour promouvoir le numérique et découvrez comment vous pouvez en tirer le meilleur parti.
             </p>
@@ -97,101 +97,6 @@
     <ContactItem/>
     <Footer/>
   </div>
-  
-  <!-- <div class="flex flex-col items-center w-full">
-    <div class="flex flex-col items-center  text-center mt-[150px] w-[100%]">
-
-      TOP PAGE 
-      <div class="w-[90%] font-bold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem]">
-        <p>
-          Connecter les gens par la technologie pour renforcer leurs relations quotidiennes
-        </p>
-      </div>
-      <div class="flex justify-center w-full">
-        <div class="mt-10 w-[90%] h-[400px] sm:h-[700px] bg-white">
-          <div class="containerVideo">
-            <video
-              muted
-              autoplay="true"
-              loop="true"
-              class="videoTop"
-              src="/videos/about.mp4"
-            />
-          </div>
-        </div>
-      </div>
-      
-       ABOUT OUR SERVICES 
-      <div class="flex flex-col items-center w-[90%]">
-         Services 
-        
-
-        
-
-       CONTACT 
-      <div class="flex flex-col items-center  text-center mt-[50px] w-[90%]">
-      <TitleH1 title="Nos contacts" />
-      <div class="w-[80%] sm:text-[20px] mt-5">
-        <p>
-          Nous sommes là pour vous accompagner, n'hésitez pas à nous faire part
-          de vos besoins
-        </p>
-      </div>
-      <NuxtLink
-        class="text-[#5d3891] w-[80%] sm:text-[18px] mt-3"
-        to="/contact"
-      >
-        En savoir plus sur nos contacts</NuxtLink
-      >
-    </div>
-    
-    <div class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]">
-      <div class="containerVideo">
-        <video
-          autoplay="true"
-          loop="true"
-          class="video"
-          src="/Video/contact.mp4"
-        />
-      </div>
-      <div
-        class="absolute top-0 left-0 flex items-center justify-center w-full h-full"
-      >
-        <div class="flex flex-col justify-between w-[150px] h-[80px]">
-          <NuxtLink
-            class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-            to="/contact"
-          >
-            Contact
-          </NuxtLink>
-
-          <NuxtLink
-            class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-            to="/newsletter"
-          >
-            Newsletter
-          </NuxtLink>
-        </div>
-        <div
-          class="flex justify-center items-center w-full h-full top-0 left-0 absolute"
-        >
-          <div class="flex flex-col justify-between w-[150px] h-[80px]">
-            <NuxtLink
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/contact"
-              >Contact</NuxtLink
-            >
-            <NuxtLink
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/newsletter"
-              >Newsletter</NuxtLink
-            >
-          </div>
-        </div>
-      </div> 
-    </div>
-    </div>
-  </div> -->
 </template>
 
 <script setup>
