@@ -3,7 +3,6 @@
  import { Icon } from '@iconify/vue';
  import Logo from '../global/Logo.vue';
  import MenuBurger from '../MenuBurger/MenuBurger.vue';
- import ModalMenuBurger from '../MenuBurger/ModalMenuBurger.vue';
  import ContenteMenuBurger from "../MenuBurger/ContenteMenuBurger.vue"
  import NavgationHeader from './NavigationHeader.vue';
 
