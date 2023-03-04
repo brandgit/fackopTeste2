@@ -20,18 +20,6 @@
             loop="true" class="video" src="/videos/contact.mp4" />
         </div>
         <div class="flex justify-center items-center absolute left-0 top-0 flex-col  w-full h-full">
-           <!-- <div class="flex flex-col justify-between w-[150px] h-[80px]">
-            <router-link
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/contact">
-                Contact
-            </router-link>
-            <router-link
-              class="flex cursor-pointer w-[100%] h-[45%] text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-              to="/newsletter">
-                Newsletter
-            </router-link>
-           </div> -->
            <div class="flex flex-col items-center text-white w-[95%]">
               <TitleH1 title="Abonnez-vous à la newsletter" />
               <div class="flex flex-col justify-between h-[120px] w-full sm:w-[300px] mt-10">
@@ -50,7 +38,6 @@
 
 <script setup>
 import TitleH1 from "./TitleH1.vue"
-import TitleH2 from "./TitleH2.vue"
 const forme = ">   ";
 </script>
 

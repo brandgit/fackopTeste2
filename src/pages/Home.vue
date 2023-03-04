@@ -80,8 +80,6 @@
   </div>
 </template>
 <script setup >
-import { computed } from 'vue';
-import store from "../store"
 import TopHome from "../components/Home/TopHome.vue";
 import IntroOfThePage from "../components/Home/IntroOfThePage.vue";
 import Footer from '../components/Footer/Footer.vue';
@@ -95,8 +93,11 @@ const forme = ">   ";
 
 <style scoped>
 .wrapperHome {
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
+  background-color: black;
 }
 .wrapperHome::-webkit-scrollbar {
   background-color: transparent;
