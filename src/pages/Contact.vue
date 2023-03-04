@@ -1,7 +1,7 @@
 <template>
     <div class="wrapperContactPage">
         <!-- Top on the page -->
-        <div class="flex flex-col items-center w-full h-[450px] md:h-[550px]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/contactImage.jpg')] text-[#fff]">
+        <div class="flex flex-col items-center w-full h-[450px] md:h-[100%]  relative bg-cover bg-no-repeat bg-center bg-[url('/images/contactImage.jpg')] text-[#fff]">
         <h1 class="w-[90%] text-[15px] sm:text-[20px] text-center mt-[110px]">Nos agents à votre écoute</h1>
         <div class="text-center mt-10 w-[90%] sm:mt-[100px] sm:text-[40px] md:text-[50px] text-[30px]  lg:text-[65px]">
           <h1 class="font-bold ">LISTENING...</h1>
@@ -66,10 +66,10 @@
                 Nous nous mettons à votre service afin d’assurer le conseil , la
                 conception et le suivi de solutions numériques d’une entité
                 professionnelle.
-                <NuxtLink
+                <router-link
                   class=" font-bold text-purple-500"
                   to="/about"
-                  >En savoir plus</NuxtLink
+                  >En savoir plus</router-link
                 >
               </p>
             </div>
@@ -82,7 +82,6 @@
             <p class="mb-4">Contactez-nous</p>
             <form class="flex flex-col gap-4 w-full" target="_blank" action="https://formsubmit.co/tikouetikouebrand@gmail.com" method="POST">
               <!-- <div class=""> -->
-                <input type="text" placeholder="Saisissez votre adresse e-mail" name="Prenom" class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"/>
                 <input
                   type="text"
                   placeholder="Nom"
@@ -175,7 +174,6 @@ import ContactItem from "../components/global/ContactItem.vue"
 .wrapperContactPage {
   width: 100%;
   height: 100vh;
-  /* background-color: #5d3891; */
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -184,25 +182,4 @@ import ContactItem from "../components/global/ContactItem.vue"
   width: 0px;
 }
 
-
-
-
-.wrapperNewsletter {
-  background-color: #f1f3f2;
-}
-
-.containerVideo {
-  min-height: 60vh;
-  height: 100%;
-  position: relative;
-  min-width: 200px;
-}
-.containerVideo .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 </style>

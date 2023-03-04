@@ -1,79 +1,5 @@
 <script setup>
-    import { Icon } from '@iconify/vue';
-    import { computed } from 'vue';
-    import store from '../../store';
-
-const homeState = computed(() => store.getters.getStateNavBar(0))
-const servicesState = computed(() => store.getters.getStateNavBar(1))
-const contactState = computed(() => store.getters.getStateNavBar(2))
-const aboutState = computed(() => store.getters.getStateNavBar(3))
-
-const changeHome = () =>{
-  if(homeState === true ){
-    store.commit('setStateHome',true)
-    store.commit('setStateServices',false)
-    store.commit('setStateAbout',false)
-    store.commit('setStateContact',false)
-  }
-  else{
-    store.commit('setStateHome',true)
-    store.commit('setStateServices',false)
-    store.commit('setStateAbout',false)
-    store.commit('setStateContact',false)
-  }
-}
-const changeServices = () =>{
-  if(servicesState === true ){
-    store.commit('setStateServices',true)
-    store.commit('setStateHome', false)
-    store.commit('setStateAbout',false)
-    store.commit('setStateContact',false)
-    
-  }else{
-    store.commit('setStateServices',true)
-    store.commit('setStateHome',false)
-    store.commit('setStateAbout',false)
-    store.commit('setStateContact',false)
-    
-  }
-
-}
-const changeAbout = () =>{
-  if(aboutState === true ){
-    store.commit('setStateAbout',true)
-    store.commit('setStateHome', false)
-    store.commit('setStateServices',false)
-    store.commit('setStateContact',false)
-    
-  }else{
-    store.commit('setStateAbout',true)
-    store.commit('setStateHome', false)
-    store.commit('setStateServices',false)
-    store.commit('setStateContact',false)
-    
-  }
-
-}
-
-const changeContact = () =>{
-  if(contactState === true ){
-    store.commit('setStateContact',true)
-    store.commit('setStateServices',false)
-    store.commit('setStateHome', false)
-    store.commit('setStateAbout',false)
-    
-    
-  }else{
-    store.commit('setStateContact',true)
-    store.commit('setStateServices',false)
-    store.commit('setStateHome', false)
-    store.commit('setStateAbout',false)
-    
-  }
-
-}
-   
-   
+    import { Icon } from '@iconify/vue';  
 </script>
 <template>
    <div class="flex justify-center items-center flex-col w-full text-[white] bg-black">
@@ -84,19 +10,12 @@ const changeContact = () =>{
             </div>
             <div class="flex flex-col gap-7 sm:flex-row justify-between w-full py-5 mb-5 ">
                 <ul>
-                    <li class="cursor-pointer"><router-link @click="changeServices()"  to="/services">Services</router-link></li>
-                    <li class="cursor-pointer"><router-link @click="changeAbout()" to="/about">About</router-link></li>
-                    <li class="cursor-pointer"><router-link @click="changeContact()"  to="/contact">Contacts</router-link></li>
-                </ul>
-                <ul>
-                    <li class="cursor-pointer">Allô-chop</li>
-                    <li class="cursor-pointer">Clando</li>
-                    <li class="cursor-pointer">Falla</li>
+                    <li class="cursor-pointer"><router-link   to="/services">Services</router-link></li>
+                    <li class="cursor-pointer"><router-link  to="/about">About</router-link></li>
+                    <li class="cursor-pointer"><router-link to="/contact">Contacts</router-link></li>
                 </ul>
                 <ul>
                     <li class="cursor-pointer">Kidangui</li>
-                    <li class="cursor-pointer">Ogoula</li>
-                    <li class="cursor-pointer">Pôpô</li>
                 </ul>
             </div>
         </div>

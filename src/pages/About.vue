@@ -34,7 +34,7 @@
     <div class="flex flex-col items-center w-full">
       <!-- Service 1  -->
         <div class="w-[90%]">
-          <p class="text-[1.3rem]  text-[#5D3891] font-bold sm:text-[20px] md:text-[30px] lg:text-[35px] mt-20">
+          <p class="text-end text-[1.3rem]  text-[#5D3891] font-bold sm:text-[20px] md:text-[30px] lg:text-[35px] mt-20">
               Accompagner les entreprise dans leur developpement
           </p>
           <div class="flex flex-col md:flex-row-reverse md:justify-between items-center">
@@ -60,7 +60,7 @@
 
          <!-- Service 3  -->
         <div class="w-[90%]">
-          <p class="text-[#5D3891]  font-bold sm:text-[20px] md:text-[30px] lg:text-[35px] mt-20">
+          <p class="text-end text-[#5D3891]  font-bold sm:text-[20px] md:text-[30px] lg:text-[35px] mt-20">
             Promouvoir le numérique
           </p>
           <div class="flex flex-col md:flex-row-reverse md:justify-between items-center">
@@ -88,7 +88,7 @@
         <div class="flex font-bold w-[80%] sm:text-[20px] mt-5">
           <h1>Nos offres:</h1>
         </div>
-        <div class=" w-full py-20">
+        <div class=" w-[90%] py-20">
            <p>Pas d'offres disponible pour le moment</p>
       </div>
       </div>

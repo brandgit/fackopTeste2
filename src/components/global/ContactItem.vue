@@ -13,12 +13,12 @@
           </router-link >
       </div>
 
-      <div class="mt-10 relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[green]">
-        <div class="containerVideo">
+      <div class="mt-10 bg-cover relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[url('/images/contactBackGround.jpg')]">
+        <!-- <div class="containerVideo">
           <video  muted
             autoplay="true"
             loop="true" class="video" src="/videos/contact.mp4" />
-        </div>
+        </div> -->
         <div class="flex justify-center items-center absolute left-0 top-0 flex-col  w-full h-full">
            <div class="flex flex-col items-center text-white w-[95%]">
               <TitleH1 title="Abonnez-vous à la newsletter" />

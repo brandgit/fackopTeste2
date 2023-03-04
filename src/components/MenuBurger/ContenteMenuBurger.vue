@@ -2,12 +2,12 @@
     <div @click="modalHandler()" class="flex fixed w-full h-screen z-20  top-[80px] left-0 ease-out duration-500 bg-[rd] " :class="[stateManu ? 'left-[-100%]' : 'left-0']" >
         <div class="flex flex-col w-full sm:w-[400px] h-full bg-black bg-opacity-50 backdrop-blur-[15px] ">
           
-            <div class="flex flex-col gap-10 h-[75%]">
-                <div class="ml-[5vw] h-[130px] w-[95%]">
+            <div class="flex flex-col gap-16 h-[75%]">
+                <div class="ml-[5vw] h-[120px] w-[95%]">
                     <div class="flex font-bold items-center cursor-pointer mt-5 text-[15px]">
                         <h1>MENU</h1>
                     </div>
-                    <div class="flex flex-col justify-evenly h-full text-[12px] mt-3 ml-5 text-[#d2caca]">
+                    <div class="flex flex-col justify-between h-full text-[12px] mt-3 ml-5 text-[#d2caca]">
                         <router-link  to="/"><h1>Home</h1></router-link>
                         <router-link to="/services"><h1>Services</h1></router-link>
                         <router-link to="/about"><h1>About</h1></router-link>
@@ -19,13 +19,8 @@
                     <div class="flex font-bold items-center cursor-pointer mt-5 text-[15px]">
                         <h1>ALL FACKOP RESSOURCES</h1>
                     </div>
-                    <div class="flex flex-col justify-evenly h-full text-[12px] mt-3 ml-5 text-[#d2caca]">
-                        <router-link  to="#"><h1>Allô-chop</h1></router-link>
-                        <router-link to="#"><h1>Clando</h1></router-link>
-                        <router-link to="#"><h1>Falla</h1></router-link>
+                    <div class="flex flex-col justify-between h-full text-[12px] mt-3 ml-5 text-[#d2caca]">
                         <router-link to="#"><h1>Kidangui</h1></router-link>
-                        <router-link to="#"><h1>Ogoula</h1></router-link>
-                        <router-link to="#"><h1>Pôpô</h1></router-link>
                     </div>
                 </div>
             </div>

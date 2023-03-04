@@ -40,19 +40,17 @@
                     <h1 class="invisible sm:visible" >All Fackop ressources</h1>
                     <Icon class="text-white w-10 h-7" icon="ic:baseline-arrow-drop-down" />
                 </div>
-                <Icon class="text-white sm:ml-5 w-6 h-7" icon="mdi:github" />
+                <a href="https://skale.space/about">
+                    <Icon class="text-white sm:ml-5 w-6 h-7" icon="mdi:github" />
+                </a>
+                
                 <Icon class="text-white sm:ml-5 w-6 h-7" icon="basil:gmail-solid" />
             </div>
             <div :class="[StateAllFackop? 'nomodalCart' : 'modalCart' ]" @click="StateAllFackop = true &&  !StateAllFackop">
                 <div class="flex justify-end w-[90%] ">
-                    <div class=" px-6 rounded-[3px] mt-[55px] w-[160px] sm:w-[200px] h-[200px] sm:h-[220px] bg-white text-black text-[11px] sm:text-[12px]" v-if="!StateAllFackop">
-                        <ul class="flex  flex-col h-[90%] justify-evenly">
-                            <li class="cursor-pointer">Fallaa</li>
-                            <li class="cursor-pointer">Allô-Tchop</li>
-                            <li class="cursor-pointer">Clando</li>
+                    <div class=" p-6 rounded-[3px] mt-[55px] w-[160px] sm:w-[200px] h-[200px] sm:h-[220px] bg-white text-black text-[11px] sm:text-[12px]" v-if="!StateAllFackop">
+                        <ul class="flex  flex-col justify-between h-[90%]">
                             <li class="cursor-pointer">Kidangui</li>
-                            <li class="cursor-pointer">Ogoula</li>
-                            <li class="cursor-pointer">Pôpô</li>
                         </ul>
                     </div>
                     <div v-else></div>
