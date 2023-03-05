@@ -63,7 +63,7 @@
             <h1 class="mb-3 text-3xl text-white font-bold">Bienvenue</h1>
             <div>
               <p class="text-white font-bold">
-                Nous nous mettons à votre service afin d’assurer le conseil , la
+                Nous nous mettons à votre service afin d'assurer le conseil , la
                 conception et le suivi de solutions numériques d’une entité
                 professionnelle.
                 <router-link
@@ -80,18 +80,22 @@
             </div>
             <!-- <h2 class="mb-4 text-3xl font-bold text-[#5D3891]">Contact</h2> -->
             <p class="mb-4">Contactez-nous</p>
-            <form class="flex flex-col gap-4 w-full" target="_blank" action="https://formsubmit.co/tikouetikouebrand@gmail.com" method="POST">
+            <form @submit.prevent="registerUser" class="flex flex-col gap-4 w-full" target="_blank" action="https://formsubmit.co/tikouetikouebrand@gmail.com" method="POST">
               <!-- <div class=""> -->
                 <input
                   type="text"
                   placeholder="Nom"
+                  v-model="name"
                   name="Nom"
+                  required
                   class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                 />
                 <input
                   type="text"
                   placeholder="Prénom"
+                  v-model="firstname"
                   name="Prenom"
+                  required
                   class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                 />
               <!-- </div> -->
@@ -99,6 +103,7 @@
                 <input
                   type="email"
                   placeholder="Email"
+                  v-model="email"
                   name="Email"
                   class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
                   required
@@ -107,8 +112,8 @@
               <!-- <div class="mt-5"> -->
                 <input
                   type="text"
-                  number="number"
                   name="Number"
+                  v-model="phone"
                   placeholder="Entrer votre numéro de téléphone"
                   autocomplete="off"
                   class="h-[50px] w-full rounded-[10px] pl-5 bg-[grey]"
@@ -121,6 +126,7 @@
                   rows="5"
                   cols="60"
                   name="message"
+                  v-model="message"
                   placeholder="Entrer votre message "
                   autocomplete="off"
                   required
@@ -143,6 +149,7 @@
               </div>
               <div class="mt-5">
                 <button
+                type="submit"
                   class="w-full py-3 rounded-[10px] text-center text-white bg-purple-500"
                 >
                   Envoyez
@@ -163,11 +170,43 @@
 </template>
 
 <script setup>
+import axios from "axios"
 import TitleH1 from "../components/global/TitleH1.vue"
 import TitleH2 from "../components/global/TitleH2.vue"
 import { Icon } from '@iconify/vue';
 import Footer from '../components/Footer/Footer.vue';
 import ContactItem from "../components/global/ContactItem.vue"
+import { ref } from 'vue'
+
+const name = ref("")
+const firstname = ref("")
+const email = ref("")
+const phone = ref("")
+const message = ref("")
+
+
+      
+      
+      
+      
+
+const registerUser = () =>{
+  const form = { name:name.value,
+    firstname:firstname.value,
+    email:email.value,
+    phone:phone.value,
+    message:message.value
+  }
+  axios.post(`http://localhost:8080/api/user/registeruser`,form)
+  .then((res) =>{
+    let responseData = res.data
+    console.log(responseData)
+    console.log("Formulaire réussi")
+  }).catch((err) =>{
+    console.log(err);
+    console.log("Formulaire non réussi")
+  })
+}
 </script>
 
 <style scoped>
