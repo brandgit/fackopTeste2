@@ -14,22 +14,22 @@
       </div>
 
       <div class="mt-10 bg-cover relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-[url('/images/contactBackGround.jpg')]">
-        <!-- <div class="containerVideo">
-          <video  muted
-            autoplay="true"
-            loop="true" class="video" src="/videos/contact.mp4" />
-        </div> -->
         <div class="flex justify-center items-center absolute left-0 top-0 flex-col  w-full h-full">
            <div class="flex flex-col items-center text-white w-[95%]">
               <TitleH1 title="Abonnez-vous à la newsletter" />
-              <div class="flex flex-col justify-between h-[120px] w-full sm:w-[300px] mt-10">
-                <input type="text" placeholder="Saisissez votre adresse e-mail" name="Prenom" class="h-[50px] w-full rounded-[10px] pl-5 border-gray-400"/>
-                <router-link
+              <form @submit.prevent="registernewslatter" class="flex flex-col justify-between h-[120px] w-full sm:w-[300px] mt-10">
+                <input v-model="email" required type="text"  placeholder="Saisissez votre adresse e-mail" name="Prenom" class="h-[50px] w-full rounded-[10px] text-black pl-5 border-gray-400"/>
+                <button type="submit"
                   class="flex cursor-pointer h-[50px] w-full text-white justify-center items-center bg-black rounded-[10px] border-[2px] border-solid border-black"
-                  to="/newsletter">
+                  >
                     Newsletter
-                </router-link>
-              </div>
+                </button>
+
+              
+              </form>
+              <div class="flex justify-center items-center text-purple-500 animate-bounce w-full p-10 text-[12px] sm:text-[20px] ">
+                  <h1>{{response}}</h1>
+               </div>
             </div>
          </div>
       </div>
@@ -38,7 +38,30 @@
 
 <script setup>
 import TitleH1 from "./TitleH1.vue"
+import axios from "axios"
+import { ref } from 'vue'
 const forme = ">   ";
+
+
+const email = ref("")
+const response = ref("")
+
+const registernewslatter = () =>{
+  const form = {
+    email:email.value,
+  }
+  axios.post(`https://fackop-api.onrender.com/api/user/registernewslatter/`,form)
+  .then((res) =>{
+    let responseData = res.data
+    console.log(responseData)
+    email.value ="",
+    response.value ="Enregistrement réussi"
+    console.log("Formulaire réussi")
+  }).catch((err) =>{
+    console.log(err);
+    console.log("Formulaire non réussi")
+  })
+}
 </script>
 
 <style scoped>

@@ -80,7 +80,7 @@
             </div>
             <!-- <h2 class="mb-4 text-3xl font-bold text-[#5D3891]">Contact</h2> -->
             <p class="mb-4">Contactez-nous</p>
-            <form @submit.prevent="registerUser" class="flex flex-col gap-4 w-full" target="_blank" action="https://formsubmit.co/tikouetikouebrand@gmail.com" method="POST">
+            <form @submit.prevent="registerUser" class="flex flex-col gap-4 w-full" target="_blank" >
               <!-- <div class=""> -->
                 <input
                   type="text"
@@ -135,7 +135,7 @@
               <!-- </div> -->
 
               <div >
-                <input type="checkbox" class="border bg-[grey]" />
+                <input type="checkbox" v-model="checkbox" required class="border bg-[grey]" />
                 <span>
                   J'accepte les Conditions
                   <a href="#" class="font-semibold text-[#5D3891]-500"
@@ -154,6 +154,9 @@
                 >
                   Envoyez
                 </button>
+               <div class="flex justify-center items-center text-purple-500 animate-bounce w-full p-10 text-[12px] sm:text-[20px] ">
+                  <h1>{{response}}</h1>
+               </div>
               </div>
             </form>
           </div>
@@ -172,7 +175,6 @@
 <script setup>
 import axios from "axios"
 import TitleH1 from "../components/global/TitleH1.vue"
-import TitleH2 from "../components/global/TitleH2.vue"
 import { Icon } from '@iconify/vue';
 import Footer from '../components/Footer/Footer.vue';
 import ContactItem from "../components/global/ContactItem.vue"
@@ -183,6 +185,8 @@ const firstname = ref("")
 const email = ref("")
 const phone = ref("")
 const message = ref("")
+const checkbox = ref(false)
+const response = ref("")
 
 
       
@@ -197,10 +201,17 @@ const registerUser = () =>{
     phone:phone.value,
     message:message.value
   }
-  axios.post(`http://localhost:8080/api/user/registeruser`,form)
+  axios.post(`https://fackop-api.onrender.com/api/user/registeruser`,form)
   .then((res) =>{
     let responseData = res.data
     console.log(responseData)
+    name.value = "",
+    firstname.value = "",
+    email.value ="",
+    phone.value = "",
+    message.value =""
+    checkbox.value = false
+    response.value ="Votre message a été bien envoyé"
     console.log("Formulaire réussi")
   }).catch((err) =>{
     console.log(err);
